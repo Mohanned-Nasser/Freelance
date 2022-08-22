@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281253211662",
+    "project_id": "lanterner-edc97",
+    "storage_bucket": "lanterner-edc97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281253211662:android:0aa4daf3ba5fa69de7165f",
+        "android_client_info": {
+          "package_name": "com.amo.lanterner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281253211662-8vao4aphvua89cuktd4p5b4g7fadqhio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8kDzokZCTqSoUbTUPTYE4D_zRO-MyPsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281253211662-8vao4aphvua89cuktd4p5b4g7fadqhio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

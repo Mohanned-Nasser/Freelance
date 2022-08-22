@@ -1,0 +1,284 @@
+<html>
+     <head>
+         <meta charset="utf-8" />
+         <title>Schedule</title>
+		 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+		 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+	 
+		 
+		 <link rel="stylesheet" href="fonts/icomoon/style.css">
+		 <link rel="stylesheet" href="css/style1.css">
+	   
+		 <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+		 <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+		 
+
+
+
+
+
+
+
+
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="../css/style.css">
+         <link rel="stylesheet" href="style.css">
+
+
+
+
+		 <link rel="stylesheet" href="css/freenbar.min.css">
+		 <link rel="stylesheet" href="css/demo.css">
+	 </head>
+	 <body>
+
+
+		 
+        <div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4">
+		  		<h1><a href="../index.html" class="logo">NG++ <span>Not a normal group</span></a></h1>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="../index.html"><span class="fa fa-home mr-3"></span> Home</a>
+	          </li>
+	          <li>
+	              <a href="../videoPage/camera.html"><span class="fa fa-video-camera mr-3"></span> Video Conferencing</a>
+	          </li>
+	          <li>
+              <a href="../chatPage/chat.html"><span class="fa fa-comments mr-3"></span> Chat</a>
+	          </li>
+	          <li>
+              <a href="calendar.html"><span class="fa fa-calendar mr-3"></span> Schedule</a>
+	          </li>
+	          
+	        </ul>
+
+	        <div class="mb-5">
+					
+    	</nav>   
+		 
+
+
+
+		<div id="barwrap">
+			<div class="bar">
+			
+			<span id="text">You have an upcoming  Event (class meeting) on (5 May 2:30pm )</span>
+			<span id="otherimg"></span>
+			<span id="ok"><a href="#">✔</a></span>
+			</div>
+		  </div>
+
+
+
+
+
+
+
+
+
+        
+         <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        
+
+		<div id='calendar-container'>
+			<div id='calendar'></div>
+		  </div>
+			
+			
+
+
+
+
+		  <div class="input">
+			  <h1>Check Temp</h1>
+			<input type="text" placeholder="Enter the city" class="input_text">
+			<input type="submit" value="Submit" class="submit">
+		  </div>
+		</div>
+		
+		
+		
+		<div class="footer">
+		<div class="input">
+		  <div class="card">
+			<h1 class="name" id="name"></h1>
+			<p class="temp"></p>
+			<p class="clouds"></p>
+			<p class="desc"></p>
+		  </div>
+		</div>
+	</div>
+		<script src="js/app.js"></script>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+		
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+		
+			<script src='fullcalendar/packages/core/main.js'></script>
+			<script src='fullcalendar/packages/interaction/main.js'></script>
+			<script src='fullcalendar/packages/daygrid/main.js'></script>
+			<script src='fullcalendar/packages/timegrid/main.js'></script>
+			<script src='fullcalendar/packages/list/main.js'></script>
+		
+			
+		
+			<script>
+			  document.addEventListener('DOMContentLoaded', function() {
+			var calendarEl = document.getElementById('calendar');
+		
+			var calendar = new FullCalendar.Calendar(calendarEl, {
+			  plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+			  height: 'parent',
+			  header: {
+				// left: 'prev,next today',
+				// center: 'title',
+				// right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+			  },
+			  defaultView: 'dayGridMonth',
+			  defaultDate: '2021-05-12',
+			  navLinks: true, // can click day/week names to navigate views
+			  editable: true,
+			  eventLimit: true, // allow "more" link when too many events
+			  events: [
+				{
+				  title: 'All Day Event',
+				  start: '2021-05-01',
+				},
+				{
+				  title: 'Long Event',
+				  start: '2021-05-07',
+				  end: '2020-02-10'
+				},
+				{
+				  groupId: 999,
+				  title: 'Repeating Event',
+				  start: '2021-05-09T16:00:00'
+				},
+				{
+				  groupId: 999,
+				  title: 'Repeating Event',
+				  start: '2021-05-16T16:00:00'
+				},
+				{
+				  title: 'Conference',
+				  start: '2021-05-01',
+				  end: '2021-05-02'
+				},
+				{
+				  title: 'Meeting',
+				  start: '2021-05-12T10:30:00',
+				  end: '2021-05-12T12:30:00'
+				},
+				{
+				  title: 'Lunch',
+				  start: '2021-05-04T12:00:00'
+				},
+				{
+				  title: 'class meeting',
+				  start: '2021-05-05T14:30:00'
+				},
+				{
+				  title: 'football',
+				  start: '2021-05-08T17:30:00'
+				},
+				{
+				  title: 'Group meeting',
+				  start: '2021-05-15T20:00:00'
+				},
+				{
+				  title: 'Web technology quize',
+				  start: '2021-05-13T07:00:00'
+				},
+				
+			  ]
+			});
+		
+			calendar.render();
+		  });
+		
+			</script>
+
+
+
+		
+		</div>
+        
+        
+    
+
+           <script src="../js/jquery.min.js"></script>
+            <script src="../js/popper.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/main.js"></script>
+           <script src="script.js"></script>
+
+
+
+
+
+
+
+		   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script defer src="js/freenbar.min.js"></script>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+	 
+
+	 
+</html>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "536903782457",
+    "firebase_url": "https://catcare-df9e7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "catcare-df9e7",
+    "storage_bucket": "catcare-df9e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536903782457:android:33b2a1e003e76cc19abde8",
+        "android_client_info": {
+          "package_name": "com.catcare.catcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536903782457-vsv4gjtnd508nar07l7pgu60v418q615.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN0l10LXs-Yc__9azwZ40Md3tjVdbQc9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536903782457-vsv4gjtnd508nar07l7pgu60v418q615.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536903782457:android:accba9c018ebf5ed9abde8",
+        "android_client_info": {
+          "package_name": "com.example.catecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536903782457-vsv4gjtnd508nar07l7pgu60v418q615.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN0l10LXs-Yc__9azwZ40Md3tjVdbQc9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536903782457-vsv4gjtnd508nar07l7pgu60v418q615.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
